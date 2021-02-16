@@ -16,24 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bjJ-0f-M2a">
-                                <rect key="frame" x="-96" y="0.0" width="607" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXw-OE-Z03">
                                 <rect key="frame" x="224" y="670" width="104" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="onpu"/>
+                                <state key="normal" title="Button" image="hana"/>
                                 <connections>
-                                    <action selector="selectedSecond" destination="BYZ-38-t0r" eventType="touchUpInside" id="TLh-VI-M0J"/>
+                                    <action selector="selectedThird" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ke-zb-Ehl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbi-fT-EMl">
                                 <rect key="frame" x="112" y="670" width="104" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="hoshi"/>
+                                <state key="normal" title="Button" image="kuchi"/>
                                 <connections>
-                                    <action selector="selectedFourth" destination="BYZ-38-t0r" eventType="touchUpInside" id="4B3-At-Mzl"/>
+                                    <action selector="selectedSecond" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnI-Y2-0Jn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1I-D5-u9i">
@@ -61,19 +57,39 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G0-5d-TKW">
-                                <rect key="frame" x="0.0" y="670" width="104" height="104"/>
+                                <rect key="frame" x="192" y="558" width="104" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="hana"/>
+                                <state key="normal" title="Button" image="me"/>
                                 <connections>
-                                    <action selector="selectedFirst" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTT-sH-HMY"/>
+                                    <action selector="selectedFirst" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ine-hb-nwI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkP-dt-C8p">
-                                <rect key="frame" x="310" y="670" width="104" height="104"/>
+                                <rect key="frame" x="0.0" y="558" width="104" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="shitumon"/>
+                                <state key="normal" title="Button" image="hidarimayu"/>
                                 <connections>
-                                    <action selector="selectedThird" destination="BYZ-38-t0r" eventType="touchUpInside" id="Li4-LI-I3W"/>
+                                    <action selector="selectedFourth" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIm-5J-IUT"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bjJ-0f-M2a">
+                                <rect key="frame" x="0.0" y="100" width="414" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UR8-wA-S9B">
+                                <rect key="frame" x="112" y="558" width="104" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="migimayu"/>
+                                <connections>
+                                    <action selector="selectedFifth" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDG-5N-zzb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gl5-BT-5mD">
+                                <rect key="frame" x="290" y="558" width="104" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="me2"/>
+                                <connections>
+                                    <action selector="selectedSixth" destination="BYZ-38-t0r" eventType="touchUpInside" id="fEI-SH-dqd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,7 +97,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="haikeiImageView" destination="bjJ-0f-M2a" id="sdB-GV-kEd"/>
+                        <outlet property="haikeiImageView" destination="bjJ-0f-M2a" id="Rsw-YH-I9T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -90,11 +106,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="640" height="1136"/>
-        <image name="hana" width="300" height="300"/>
-        <image name="hoshi" width="300" height="300"/>
-        <image name="onpu" width="300" height="300"/>
-        <image name="shitumon" width="330" height="330"/>
+        <image name="background" width="172" height="172"/>
+        <image name="hana" width="531" height="531"/>
+        <image name="hidarimayu" width="561" height="561"/>
+        <image name="kuchi" width="307" height="227"/>
+        <image name="me" width="194" height="194"/>
+        <image name="me2" width="194" height="194"/>
+        <image name="migimayu" width="561" height="561"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
-    var imageNameArray:[String]=["hana","hoshi","onpu","shitumon"]
+    var imageNameArray:[String]=["me","kuchi","hana","hidarimayu","migimayu","me2"]
     var imageIndex:Int=0
     @IBOutlet var haikeiImageView :UIImageView!
     var imageView:UIImageView!
@@ -36,6 +36,16 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     @IBAction func selectedFourth(){
         imageIndex=4
+        
+    }
+    
+    @IBAction func selectedFifth(){
+        imageIndex=5
+        
+    }
+    
+    @IBAction func selectedSixth(){
+        imageIndex=6
         
     }
     
