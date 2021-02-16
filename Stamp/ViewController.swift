@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
-    var imageNameArray:[String]=["me","kuchi","hana","hidarimayu","migimayu","me2"]
+    var imageNameArray:[String]=["hidarimayu","migimayu","hidarime","migime","kuchi","hana",]
     var imageIndex:Int=0
     @IBOutlet var haikeiImageView :UIImageView!
     var imageView:UIImageView!
@@ -19,6 +19,14 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet var hidarimayu:UIButton!
+    @IBOutlet var migimayu:UIButton!
+    @IBOutlet var hidarime:UIButton!
+    @IBOutlet var migime:UIButton!
+    @IBOutlet var kuchi:UIButton!
+    @IBOutlet var hana:UIButton!
+    
+    
     @IBAction func selectedFirst(){
         imageIndex=1
         
@@ -62,6 +70,28 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
             imageView.center=CGPoint(x: location.x, y: location.y)
             
             self.view.addSubview(imageView)
+            
+            switch imageIndex {
+            
+            case 0:break
+                
+            case 1:hidarimayu.isEnabled=false
+                
+            case 2:migimayu.isEnabled=false
+                
+            case 3:hidarime.isEnabled=false
+                
+            case 4:migime.isEnabled=false
+                
+            case 5:kuchi.isEnabled=false
+                
+            case 6:hana.isEnabled=false
+                
+            default:break
+                
+                
+            }
+            
         }
     }
     

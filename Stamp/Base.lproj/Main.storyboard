@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="hana"/>
                                 <connections>
-                                    <action selector="selectedThird" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ke-zb-Ehl"/>
+                                    <action selector="selectedSixth" destination="BYZ-38-t0r" eventType="touchUpInside" id="pMk-YA-zOV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbi-fT-EMl">
@@ -29,7 +29,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="kuchi"/>
                                 <connections>
-                                    <action selector="selectedSecond" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnI-Y2-0Jn"/>
+                                    <action selector="selectedFifth" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbr-el-CdY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1I-D5-u9i">
@@ -59,9 +59,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G0-5d-TKW">
                                 <rect key="frame" x="192" y="558" width="104" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="me"/>
+                                <state key="normal" title="Button" image="hidarime"/>
                                 <connections>
-                                    <action selector="selectedFirst" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ine-hb-nwI"/>
+                                    <action selector="selectedThird" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ki-KW-soo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkP-dt-C8p">
@@ -69,7 +69,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="hidarimayu"/>
                                 <connections>
-                                    <action selector="selectedFourth" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIm-5J-IUT"/>
+                                    <action selector="selectedFirst" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdw-h9-1iP"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bjJ-0f-M2a">
@@ -81,15 +81,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="migimayu"/>
                                 <connections>
-                                    <action selector="selectedFifth" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDG-5N-zzb"/>
+                                    <action selector="selectedSecond" destination="BYZ-38-t0r" eventType="touchUpInside" id="z7Z-qX-A8i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gl5-BT-5mD">
                                 <rect key="frame" x="290" y="558" width="104" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="me2"/>
+                                <state key="normal" title="Button" image="migime"/>
                                 <connections>
-                                    <action selector="selectedSixth" destination="BYZ-38-t0r" eventType="touchUpInside" id="fEI-SH-dqd"/>
+                                    <action selector="selectedFourth" destination="BYZ-38-t0r" eventType="touchUpInside" id="K7L-94-Tg6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,6 +98,12 @@
                     </view>
                     <connections>
                         <outlet property="haikeiImageView" destination="bjJ-0f-M2a" id="Rsw-YH-I9T"/>
+                        <outlet property="hana" destination="UXw-OE-Z03" id="Z8l-I8-sRT"/>
+                        <outlet property="hidarimayu" destination="xkP-dt-C8p" id="c9y-e8-QDb"/>
+                        <outlet property="hidarime" destination="1G0-5d-TKW" id="KCQ-IP-nw0"/>
+                        <outlet property="kuchi" destination="kbi-fT-EMl" id="pwy-5P-kC5"/>
+                        <outlet property="migimayu" destination="UR8-wA-S9B" id="r8n-gu-Wcq"/>
+                        <outlet property="migime" destination="gl5-BT-5mD" id="Nz1-mo-lfF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -109,10 +115,10 @@
         <image name="background" width="172" height="172"/>
         <image name="hana" width="531" height="531"/>
         <image name="hidarimayu" width="561" height="561"/>
+        <image name="hidarime" width="194" height="194"/>
         <image name="kuchi" width="307" height="227"/>
-        <image name="me" width="194" height="194"/>
-        <image name="me2" width="194" height="194"/>
         <image name="migimayu" width="561" height="561"/>
+        <image name="migime" width="194" height="194"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
