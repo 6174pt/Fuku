@@ -95,8 +95,13 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         }
     }
     
-    @IBAction func back(){
-        self.imageView.removeFromSuperview()
+    @IBAction func reset(){
+        let subViews = imageView.subviews
+        
+        for view in subViews{
+            
+            view.removeFromSuperview()
+        }
         
     }
     

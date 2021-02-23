@@ -41,11 +41,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-zU-6xw">
-                                <rect key="frame" x="103" y="811" width="31" height="30"/>
+                                <rect key="frame" x="88" y="811" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="戻る"/>
+                                <state key="normal" title="リセット"/>
                                 <connections>
-                                    <action selector="back" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tcg-y8-JsU"/>
+                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="G0i-3Q-Tiy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpX-EI-YJL">
