@@ -13,6 +13,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     var imageIndex:Int=0
     @IBOutlet var haikeiImageView :UIImageView!
     var imageView:UIImageView!
+    var stampArray=[UIImageView]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +72,8 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
             
             self.view.addSubview(imageView)
             
+            stampArray.append(imageView)
+            
             switch imageIndex {
             
             case 0:break
@@ -96,10 +99,8 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     }
     
     @IBAction func reset(){
-        let subViews = imageView.subviews
         
-        for view in subViews{
-            
+        for view in stampArray{
             view.removeFromSuperview()
         }
         
