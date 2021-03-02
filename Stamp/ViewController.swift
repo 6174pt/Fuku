@@ -30,37 +30,93 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     @IBAction func selectedFirst(){
         imageIndex=1
+        setSelectedButton()
         
     }
     
     @IBAction func selectedSecond(){
         imageIndex=2
+        setSelectedButton()
         
     }
 
     @IBAction func selectedThird(){
         imageIndex=3
+        setSelectedButton()
         
     }
     
     @IBAction func selectedFourth(){
         imageIndex=4
+        setSelectedButton()
         
     }
     
     @IBAction func selectedFifth(){
         imageIndex=5
+        setSelectedButton()
         
     }
     
     @IBAction func selectedSixth(){
         imageIndex=6
+        setSelectedButton()
         
+    }
+    
+    func setSelectedButton(){
+        hidarimayu.layer.borderWidth=0
+        migimayu.layer.borderWidth=0
+        hidarime.layer.borderWidth=0
+        migime.layer.borderWidth=0
+        kuchi.layer.borderWidth=0
+        hana.layer.borderWidth=0
+        
+        switch imageIndex {
+    
+    case 0:
+        break
+        
+    case 1:
+        hidarimayu.layer.borderWidth=2.0
+        hidarimayu.layer.borderColor=UIColor.red.cgColor
+        
+    case 2:
+        migimayu.layer.borderWidth=2.0
+        migimayu.layer.borderColor=UIColor.red.cgColor
+        
+    case 3:
+        hidarime.layer.borderWidth=2.0
+        hidarime.layer.borderColor=UIColor.red.cgColor
+        
+    case 4:
+        migime.layer.borderWidth=2.0
+        migime.layer.borderColor=UIColor.red.cgColor
+        
+    case 5:
+        kuchi.layer.borderWidth=2.0
+        kuchi.layer.borderColor=UIColor.red.cgColor
+        
+    case 6:
+        hana.layer.borderWidth=2.0
+        hana.layer.borderColor=UIColor.red.cgColor
+        
+    default:
+        break
+        
+        }
+        
+    }
+    
+    @IBAction func modoru(){
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch:UITouch=touches.first!
         let location:CGPoint=touch.location(in: self.view)
+        
+        haikeiImageView.image=nil
         
         if imageIndex != 0 {
             imageView=UIImageView(frame: CGRect(x: 0,y: 0,width: 40,height: 40))
@@ -76,26 +132,68 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
             
             switch imageIndex {
             
-            case 0:break
+            case 0:
+                break
                 
-            case 1:hidarimayu.isEnabled=false
+            case 1:
+                hidarimayu.isEnabled=false
                 
-            case 2:migimayu.isEnabled=false
+            case 2:
+                migimayu.isEnabled=false
                 
-            case 3:hidarime.isEnabled=false
+            case 3:
+                hidarime.isEnabled=false
                 
-            case 4:migime.isEnabled=false
+            case 4:
+                migime.isEnabled=false
                 
-            case 5:kuchi.isEnabled=false
+            case 5:
+                kuchi.isEnabled=false
                 
-            case 6:hana.isEnabled=false
+            case 6:
+                hana.isEnabled=false
                 
-            default:break
+            default:
+                break
                 
                 
             }
             
+            imageIndex=0
+            
         }
+        
+        if !isAllSelected(){
+            haikeiImageView.image=UIImage(named: "background")
+        }
+    }
+    
+    func isAllSelected()->Bool{
+        if hidarimayu.isEnabled{
+            return true
+        }
+        
+        if migimayu.isEnabled{
+            return true
+        }
+        
+        if hidarime.isEnabled{
+            return true
+        }
+        
+        if migime.isEnabled{
+            return true
+        }
+        
+        if kuchi.isEnabled{
+            return true
+        }
+        
+        if hana.isEnabled{
+            return true
+        }
+        return false
+        
     }
     
     @IBAction func reset(){
