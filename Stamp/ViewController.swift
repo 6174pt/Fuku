@@ -14,12 +14,14 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     @IBOutlet var haikeiImageView :UIImageView!
     var imageView:UIImageView!
     var stampArray=[UIImageView]()
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    
     @IBOutlet var hidarimayu:UIButton!
     @IBOutlet var migimayu:UIButton!
     @IBOutlet var hidarime:UIButton!
@@ -80,26 +82,32 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     case 1:
         hidarimayu.layer.borderWidth=2.0
         hidarimayu.layer.borderColor=UIColor.red.cgColor
+        hidarimayu.layer.cornerRadius=5.0
         
     case 2:
         migimayu.layer.borderWidth=2.0
         migimayu.layer.borderColor=UIColor.red.cgColor
+        migimayu.layer.cornerRadius=5.0
         
     case 3:
         hidarime.layer.borderWidth=2.0
         hidarime.layer.borderColor=UIColor.red.cgColor
+        hidarime.layer.cornerRadius=5.0
         
     case 4:
         migime.layer.borderWidth=2.0
         migime.layer.borderColor=UIColor.red.cgColor
+        migime.layer.cornerRadius=5.0
         
     case 5:
         kuchi.layer.borderWidth=2.0
         kuchi.layer.borderColor=UIColor.red.cgColor
+        kuchi.layer.cornerRadius=5.0
         
     case 6:
         hana.layer.borderWidth=2.0
         hana.layer.borderColor=UIColor.red.cgColor
+        hana.layer.cornerRadius=5.0
         
     default:
         break

@@ -15,6 +15,7 @@
 		5548D1F325A47EF7008C7BC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5548D1F125A47EF7008C7BC9 /* LaunchScreen.storyboard */; };
 		5548D1FE25A47EF7008C7BC9 /* StampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5548D1FD25A47EF7008C7BC9 /* StampTests.swift */; };
 		5548D20925A47EF7008C7BC9 /* StampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5548D20825A47EF7008C7BC9 /* StampUITests.swift */; };
+		5599FAE225F77EDD00110B52 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5599FAE125F77EDD00110B52 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5548D20425A47EF7008C7BC9 /* StampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5548D20825A47EF7008C7BC9 /* StampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampUITests.swift; sourceTree = "<group>"; };
 		5548D20A25A47EF7008C7BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5599FAE125F77EDD00110B52 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				5548D1E825A47EF4008C7BC9 /* SceneDelegate.swift */,
 				5548D1EA25A47EF4008C7BC9 /* ViewController.swift */,
 				5548D1EC25A47EF4008C7BC9 /* Main.storyboard */,
+				5599FAE125F77EDD00110B52 /* SecondViewController.swift */,
 				5548D1EF25A47EF7008C7BC9 /* Assets.xcassets */,
 				5548D1F125A47EF7008C7BC9 /* LaunchScreen.storyboard */,
 				5548D1F425A47EF7008C7BC9 /* Info.plist */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5599FAE225F77EDD00110B52 /* SecondViewController.swift in Sources */,
 				5548D1EB25A47EF4008C7BC9 /* ViewController.swift in Sources */,
 				5548D1E725A47EF4008C7BC9 /* AppDelegate.swift in Sources */,
 				5548D1E925A47EF4008C7BC9 /* SceneDelegate.swift in Sources */,
